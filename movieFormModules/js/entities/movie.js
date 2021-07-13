@@ -1,4 +1,4 @@
-export class Movie {
+class Movie {
     constructor (title, length, genre) {  
         this.title = title;
         this.length = parseInt(length);
@@ -13,3 +13,5 @@ export class Movie {
     return this.title + ", " + this.length + "min, " + this.getGenreData();
     }
 }
+
+export default Movie;

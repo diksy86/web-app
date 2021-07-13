@@ -1,6 +1,6 @@
-import Festival from './js/entities/festival'
-import Movie from "./js/entities/movie"
-import Program from "./js/entities/program"
+import Festival from "../entities/festival.js"
+import Movie from "../entities/movie.js"
+import Program from "../entities/program.js"
 
 
 let festival = new Festival();
@@ -76,7 +76,7 @@ export const addProgram = (date) => {
     if (dateObj.getTime() < Date.now) {
         errors.push("Invalid date.");
     }
-    hasProgramWithSameDate = festival.listOfPrograms.some(function (program) {
+    let hasProgramWithSameDate = festival.listOfPrograms.some(function (program) {
         return dateObj.getTime() === program.date.getTime();
       });
 
@@ -130,6 +130,3 @@ export const addMovieToProgram = () => {
     programSelectOptions[programValue + 1].innerHTML = program.getData();
     return true;
 }
-
-
-

@@ -1,7 +1,7 @@
-import Program from "./js/entities/program"
-import Movie from "./js/entities/movie"
+import Program from "./program.js"
+import Movie from "./movie.js"
 
- export class Festival {
+class Festival {
     constructor() {  
     this.listOfPrograms = [];
     this.listOfMovies = [];
@@ -21,3 +21,5 @@ import Movie from "./js/entities/movie"
         return this.listOfMovies.push(movie) - 1;
     }
 }
+
+export default Festival;

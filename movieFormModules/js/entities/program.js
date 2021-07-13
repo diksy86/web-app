@@ -1,5 +1,5 @@
-import Movie from "./js/entities/movie"
-export class Program {
+import Movie from "./movie.js"
+class Program {
     constructor (date) { 
     this.date = new Date(date);
     this.listOfMovies = [];
@@ -35,3 +35,5 @@ addMovie(movie) {
     return this.listOfMovies.push(movie) - 1;
 }
 }
+
+export default Program;
