@@ -5,22 +5,20 @@ import Program from "../entities/program.js"
 
 let festival = new Festival();
 
-let createMovieBtn = document.querySelector("#create-movie");
-let createProgramBtn = document.querySelector("#create-program");
-let addMovieToProgramBtn = document.querySelector("#add-movie");
+
 let inputTitleEle = document.querySelector("#title");
 let inputLengthEle = document.querySelector("#length");
 let selectGenreEle = document.querySelector("#genre");
 let movieErrorEle = document.querySelector("#movie-error");
 let movieSelectEle = document.querySelector("#movie-select");
 let ulMovieListEle = document.querySelector("#movie-list");
-let inputDateEle = document.querySelector("#date");
+
 let programErrorEle = document.querySelector("#program-error");
 let ulProgramListEle = document.querySelector("#program-list");
 let programSelectEle = document.querySelector("#program-select");
 let selectMovieEle = document.querySelector("#movie-select");
 let selectProgramEle = document.querySelector("#program-select");
-let ulProgramSetlist = document.querySelector("#program-setlist");
+
 let programSetlistError = document.querySelector("#program-setlist-error");
 
 

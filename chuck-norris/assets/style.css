@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+button {
+    background:#6D652B;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover {
+    background: #837933;
+}
+button:active {
+    background: #504a20;
+}
+p#joke-text {
+    border-radius: 5px;
+    border: 2px solid #f3f3f3;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 400px;
+    color: #fff;
+}
+.error {
+    color: red;
+}
+
+body {
+    background-image: url('./bg.jpeg');
+    background-repeat: no-repeat;
+}
